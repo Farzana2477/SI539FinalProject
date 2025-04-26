@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <header>
+        <a class="skip" href="#main">Skip to Main Content</a>
+        
+        <nav>
+            <ul>
+                <li><a href = "home.html">Home</a></li>
+                <li><a href = "hotline.html">Hotline</a></li>
+                <li><a href = "counseling.html" class="active">Counseling</a></li>
+                <li><a href = "housing.html">Housing</a></li>
+            </ul>
+        </nav>
+
+        <h1>MAI Family Services Counseling</h1>
+
+    </header>
+
+
+    <main id="main">
+
+        
+        <h2>MAI's Mission Statement:</h2>
+        <p>
+            Mai Family Services seeks to raise awareness of the problems facing the South Asian community in Michigan and to provide support services in the areas of partner and family violence, substance abuse, mental health and senior issues through confidential and culturally sensitive intervention.
+        </p>
+
+
+        <figure>
+            <img src="images/talking.jpeg" alt ="Image of two women conversating." class="converse">
+            <!-- reference: https://en.ac-illust.com/clip-art/23696519/woman-receiving-counseling -->
+            <figcaption>Image of two women conversating.</figcaption>
+        </figure>
+
+        <h2>
+            Are you in need of counseling services?
+        </h2>
+        <p>
+            Well, you've come to the right spot. At MAI Family Services, Counseling is a large part of our service to our community. We encourage people to reach out for help.
+        </p>
+
+        <div>
+            <h2>Here at MAI, we focus on prevention and intervention. Below are the services we provide.</h2>
+            <p>For provide counseling in the following areas:</p>
+            <ol class="list">
+                <li>
+                    Abuse
+                </li>
+                <li>
+                    Prevention
+                </li>
+                <li>
+                    Grief and bereavement support
+                </li>
+                <li>
+                    Issues affecting seniors
+                </li>
+                <li>
+                    Substance abuse
+                </li>
+                <li>
+                    Adjustment to new culture
+                </li>
+                <li>
+                    Marriage Counselling
+                </li>
+                <li>
+                    Toll free and confidential helpline and support in multiple Indian languages
+                </li>
+                <li>
+                    Referrals to shelters, attorneys, community health resources, therapists
+                </li>
+                <li>
+                    Awareness training workshops for community members
+                </li>
+                <li>
+                    Effective Communication
+                </li>
+                <li>
+                    Workplace Challenge
+                </li>
+                <li>
+                    Mental Health issues
+                </li>
+            </ol>
+
+            <figure class="intro">
+                <img src="images/lily_logo.png" alt ="Image of a pink lily.">
+                <figcaption>Image of a pink lily.</figcaption>
+            </figure>
+        </div>
+        
+        
+        
+        <h2>
+            Who should I contact?
+        </h2>
+        <div>
+            <ul>
+                <li>
+                    For our free helpline: call (888) 664-8624
+                </li>
+                <li>
+                    To email us for more information: info@maifs.org
+                </li>
+            </ul>
+        </div>
+
+        <h2>
+            Are you in search of a job? Are you passionate about helping women experiencing DV?
+        </h2>
+        <p>
+            Go to <a href="https://maifs.org/job-opportunities/"> https://maifs.org/job-opportunities/ </a> today!
+        </p>
+
+
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>© Copyrights <span id="year"></span> by Farzana Chowdhury. All rights reserved.</p>
+        <p>Location: 32401 W. Eight Mile Rd. Livonia, MI 48152</p>
+        <p>Hours: Open 24/7 </p>
+        <p>Contact:</p>
+        <p>Email: info@maifs.org</p>
+        <p>Phone: (248) 477-4985</p>
+        <p>
+            <a href="https://maifs.org/">https://maifs.org/</a>
+        </p>
+
+    </footer>
+
+    <button type="button" onclick="topFunction()" id="top" title="Go to top">Scroll to Top</button>
+</body>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+
+
+    let mybutton = document.getElementById("top");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <a class="skip" href="#main">Skip to Main Content</a>
+        
+        <nav>
+            <ul>
+                <li><a href = "home.html">Home</a></li>
+                <li><a href = "hotline.html">Hotline</a></li>
+                <li><a href = "counseling.html">Counseling</a></li>
+                <li><a href = "housing.html" class="active">Housing</a></li>
+            </ul>
+        </nav>
+
+        <h1>List of Housing</h1>
+
+    </header>
+
+
+    <main id="main">
+
+        <h2>Mission Statement:</h2>
+        <p>
+            We are committed to empowering South Asian women in Southern Michigan by providing safe housing resources and support for those facing domestic violence. Through culturally sensitive assistance and trusted connections, we strive to create pathways to safety, stability, and independence.
+        </p>
+
+        <!-- reference: https://www.domesticshelters.org/help/mi/detroit?page=1 -->
+
+        <h2>
+            Housing List
+        </h2>
+        <div class="housing">
+            <span>
+                <a href="https://www.domesticshelters.org/help/mi/detroit/48202/women-in-touch">Women in Touch</a><br>
+                <a href="https://www.domesticshelters.org/help/mi/detroit/48221/ywca-interim-house-metro-detroit">YWCA Interim House Metro Detroit</a><br>
+                <a href="https://www.domesticshelters.org/help/mi/detroit/48231/detroit-rescue-mission-ministries">Detroit Rescue Mission Ministries in Detroit, MI</a><br>
+                <a href="https://www.domesticshelters.org/help/mi/detroit/48219/sisters-against-abuse-society">Sisters Against Abuse Society</a><br>
+            </span>
+        </div>
+
+        <h2>
+            What resources do we provide at the shelters?
+        </h2>
+        
+        <ul>
+            <li>
+                -Emergency shelter and crisis housing
+            </li>
+            <li>
+                -Rent assistance and eviction prevention
+            </li>
+            <li>
+                -Help finding long-term housing
+            </li>
+            <li>
+                -Support for applying to subsidized housing
+            </li>
+            <li>
+                -Referrals to transitional or supportive housing
+            </li>
+            <li>
+                -Assistance for newcomers and refugees
+            </li>
+            <li>
+                -Landlord mediation and advocacy
+            </li>
+            <li>
+                -Case management and housing navigation
+            </li>
+        </ul>
+
+
+
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>© Copyrights <span id="year"></span> by Farzana Chowdhury. All rights reserved.</p>
+        <p>Location: 501 W. Broadway, Ste A #625 San Diego, CA 92101</p>
+        <p>Hours: Open 24/7 </p>
+        <p>Contact:</p>
+        <p>Email: farzanac@umich.edu</p>
+        <p>Phone: (734)000-0000</p>
+        <p><a href="https://www.domesticshelters.org/help/mi/detroit?page=1 ">Domestic Violence Programs in Detroit</a></p>
+
+    </footer>
+
+    <button type="button" onclick="topFunction()" id="top" title="Go to top">Scroll to Top</button>
+</body>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+
+
+    let mybutton = document.getElementById("top");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>

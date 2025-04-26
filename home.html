@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <a class="skip" href="#main">Skip to Main Content</a>
+
+
+        <!-- <div class="logocontainer"></div>
+            <img src="images/lily_logo.png" alt ="logo of a lily" class="logo">
+        </div> -->
+        
+        <nav>
+            <ul>
+                <li><a href = "home.html" class="active">Home</a></li>
+                <li><a href = "hotline.html">Hotline</a></li>
+                <li><a href = "counseling.html">Counseling</a></li>
+                <li><a href = "housing.html">Housing</a></li>
+            </ul>
+        </nav>
+
+        <h1>Desi Roots</h1>
+
+    </header>
+
+
+    <main id="main">
+        <h2>Mission Statement</h2>
+        <p>At Desi Roots, we are dedicated to empowering South Asian women in Southern Michigan who are experiencing domestic violence. By offering culturally sensitive counseling, multilingual hotlines, and access to housing shelter resources, we provide compassionate, informed support that understands the unique challenges faced by our community. Our mission is to help survivors reclaim their voices and rebuild their lives with dignity and strength.At Desi Roots, we are dedicated to empowering South Asian women in Southern Michigan who are experiencing domestic violence. By offering culturally sensitive counseling, multilingual hotlines, and access to housing shelter resources, we provide compassionate, informed support that understands the unique challenges faced by our community. Our mission is to help survivors reclaim their voices and rebuild their lives with dignity and strength.</p>
+        <section class="page">
+
+            <div>
+                <h2>
+                    Manavi: A Multilingual Hotline
+                </h2>
+                <fig>
+                    <img src="images/manavihome.png" alt ="Group of people marching with a banner stating 'Working to end violence against women'">
+                    <figcaption>Image shows a group of people marching with a banner stating 'Working to end violence against women'</figcaption>
+                </fig>
+
+                <p>
+                    Founded in 1985, Manavi is the first organization in the United States committed to ending all forms of violence against South Asian survivors. With a strong survivor-centered approach, Manavi offers culturally specific and linguistically appropriate services tailored to the unique needs of the South Asian community. Our dedicated staff and volunteers, fluent in over 14 South Asian languages, work tirelessly to support survivors and build a violence-free future.
+                </p>
+            </div>
+
+            <div>
+                <h2>
+                    MAI Family Services: Counseling and more!
+                </h2>
+                <fig>
+                    <img src="images/maihome.png" alt ="Older woman is reading a book to a younger child. The older woman is wearing a scarf around her neck and pointing to the book. She also points toward the book and laughingly looks at the child.">
+                    <figcaption>Older woman is reading a book to a younger child. The older woman is wearing a scarf around her neck and pointing to the book. She also points toward the book and laughingly looks at the child.</figcaption>
+                </fig>
+                <p>
+                    Mai Family Services supports Michigan's South Asian community by raising awareness and providing confidential, culturally sensitive assistance for issues like family violence, substance abuse, mental health, and senior care.
+                </p>
+            </div>
+
+            <div>
+                <h2>
+                    Housing Options
+                </h2>
+                <figure>
+                    <img src="images/housinghome.png" alt ="Image of various types of buildings under a gable roof.">
+                    <!-- reference: https://www.politico.com/interactives/2019/what-works-next-2019-minneapolis-housing/ -->
+                    <figcaption>Image of various types of buildings under a gable roof</figcaption>
+                </figure>
+                <p>
+                    We are committed to empowering South Asian women in Southern Michigan by providing safe housing resources and support for those facing domestic violence. Through culturally sensitive assistance and trusted connections, we strive to create pathways to safety, stability, and independence.
+                </p>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>© Copyrights <span id="year"></span> by Farzana Chowdhury. All rights reserved.</p>
+        <p>Location: Michigan</p>
+        <p>Hours: Open 24/7 </p>
+        <p>Contact:</p>
+        <p>Email: farzanac@umich.edu</p>
+        <p>Phone: (734)000-0000</p>
+
+    </footer>
+
+    <button type="button" onclick="topFunction()" id="top" title="Go to top">Scroll to Top</button>
+</body>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+    let mybutton = document.getElementById("top");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+
+
+
+    const button = document.getElementById('top');
+    button.addEventListener('click', () => {
+        button.classList.toggle('glow');
+    });
+
+
+
+
+    /* let help = prompt("Do you need 911?"); 
+    if (help === 'yes') { 
+	alert('Please leave this website and call 911.'); 
+    } else { 
+	alert('Explore our resources!'); 
+    } */
+
+
+
+</script>
+
+</html>
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <a class="skip" href="#main">Skip to Main Content</a>
+        
+        <nav>
+            <ul>
+                <li><a href = "home.html">Home</a></li>
+                <li><a href = "hotline.html" class="active">Hotline</a></li>
+                <li><a href = "counseling.html">Counseling</a></li>
+                <li><a href = "housing.html">Housing</a></li>
+            </ul>
+        </nav>
+
+        <h1>Manavi.org Multilingual Hotline</h1>
+
+    </header>
+
+
+    <main id="main">
+
+        
+        <h2>Manavi's Mission Statement:</h2>
+        <p>
+            End all forms of violence in the South Asian community
+Founded in 1985, Manavi is the first organization in the United States dedicated to ending all forms of violence against South Asian survivors. Using a survivor-centered approach, Manavi provides culturally specific and linguistically appropriate services to South Asian survivors of violence. Manavi’s staff and volunteers are bilingual—speaking over 14 different South Asian languages.
+        </p>
+
+        <h2>
+            What languages are supported?
+        </h2>
+        <div class="carousel">
+            <span>
+              English<br>
+              Hindi<br>
+              Punjabi<br>
+              Urdu<br>
+              Farsi<br>
+              Gujarati<br>
+              Bengali<br>
+              Kannada<br>
+              Telugu<br>
+              Marathi<br>
+              Tamil<br>
+              French<br>
+              Swahili<br>
+              Kikuyu
+            </span>
+        </div>
+
+        <h2>
+            Call our hotline today!
+        </h2>
+        <p>
+            1-732-435-1414
+        </p>
+
+        <h2>
+            How do we support our clients?
+        </h2>
+
+        <ul>
+            <li>
+                We listen.
+            </li>
+            <li>
+                We don't judge.
+            </li>
+            <li>
+                We respect your privacy.
+            </li>
+            <li>
+                We ensure your safety.
+            </li>
+        </ul>
+
+        <h2>
+            To learn more about our resources, visit our website today at <a href="https://www.manavi.org/">https://www.manavi.org/</a>
+        </h2>
+        
+        <p>
+            To get involved, visit <a href=" https://www.manavi.org/get-involved/">https://www.manavi.org/get-involved/</a>
+        </p>
+    </main>
+
+
+
+    <footer>
+
+        <p>© Copyrights <span id="year"></span> by Farzana Chowdhury. All rights reserved.</p>
+        <p>Location: New Brunswick, NJ 08903</p>
+        <p>Hours: Open 24/7 </p>
+        <p>Contact:</p>
+        <p>Email: farzanac@umich.edu</p>
+        <p>Phone: 1-732-435-1414</p>
+        <p>
+            <a href="https://www.manavi.org/">https://www.manavi.org/</a>
+        </p>
+
+    </footer>
+    
+    <button type="button" onclick="topFunction()" id="top" title="Go to top">Scroll to Top</button>
+</body>
+
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+
+
+    let mybutton = document.getElementById("top");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</html>
