@@ -99,26 +99,24 @@
     </footer>
 
     <button type="button" onclick="topFunction()" id="top" title="Go to top">Scroll to Top</button>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    
+        let mybutton = document.getElementById("top");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
 
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-
-
-
-
-    let mybutton = document.getElementById("top");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-    function topFunction() {
-        document.documentElement.scrollTop = 0;
-    }
-</script>
 
 </html>
